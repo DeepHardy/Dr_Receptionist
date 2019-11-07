@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
     * In fulfillment code of index.js, change email-id, password
     * Change and update user account details in order to connect to google calendar. You can get more information and watching https://youtu.be/4_MvIf_ULgc and follow the steps mentioned in the video.
   
-**After successful deployment of code on firebase, check the working on the web demo by enabling "Web Demo" in Dialoagflow integrations.
+### After successful deployment of code on firebase, check the working on the web demo by enabling "Web Demo" in Dialoagflow integrations.
 
 You can add more integrations just by following the documentation mentioned in the console integrations page.
 
@@ -47,8 +47,8 @@ like to book/cancel an appointment or ask any question/queries with doctor?”.
 
 ### Features and functions to test
 
-Booking appointments and reflecting the appointments on Doctor's Google calendar
-Sending queries and get reply over email.
+* Booking appointments and reflecting the appointments on Doctor's Google calendar
+* Sending queries and get reply over email.
 
 ## Deployment
 
