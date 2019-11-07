@@ -1,0 +1,59 @@
+{
+  "id": "ac05f661-9fd8-40bb-b889-0e33c5d55f3f",
+  "name": "AppointmentType",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "OPD",
+      "synonyms": [
+        "OPD",
+        "Bones",
+        "Fracture"
+      ]
+    },
+    {
+      "value": "Routine Appointment",
+      "synonyms": [
+        "Routine Appointment",
+        "Routine",
+        "Regular check",
+        "Normal Appointment"
+      ]
+    },
+    {
+      "value": "Physician",
+      "synonyms": [
+        "Physician",
+        "Fever",
+        "Ill",
+        "sick",
+        "Cough",
+        "cold",
+        "sour throat",
+        "Minor Illness"
+      ]
+    },
+    {
+      "value": "Dental",
+      "synonyms": [
+        "Dental",
+        "Teeth",
+        "Gums",
+        "Cavity",
+        "Dentist"
+      ]
+    },
+    {
+      "value": "medical certificate",
+      "synonyms": [
+        "medical certificate",
+        "certificate",
+        "fitness"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}
