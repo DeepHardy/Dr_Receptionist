@@ -1,0 +1,125 @@
+{
+  "id": "7741e93b-c3e5-4cfb-a00e-4bb1702bf8da",
+  "name": "setAppointment?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "setAppointment",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "So, do you want to book an appointment with Doctor?(yes/no)"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "6466ab4d-bc5d-4cce-b493-dacec1a0d713",
+      "data": [
+        {
+          "text": "set appointment",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "52d56cc8-c7e4-4432-ba09-1e4f552b19ce",
+      "data": [
+        {
+          "text": "See Doctor",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1edd71d9-dda5-4c4e-b1c6-fe5b487bc3c7",
+      "data": [
+        {
+          "text": "See Dr.",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fdca0f7d-b60f-4620-bc98-a9600c03f1d8",
+      "data": [
+        {
+          "text": "see a ",
+          "userDefined": false
+        },
+        {
+          "text": "dentist",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4aa0e070-af96-4979-90d1-eb2b59f029fe",
+      "data": [
+        {
+          "text": "fix an appointment",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c5ea1469-ff2b-4c29-a879-80ef625c8130",
+      "data": [
+        {
+          "text": "book appointment",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

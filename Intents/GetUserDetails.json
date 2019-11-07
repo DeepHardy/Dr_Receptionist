@@ -1,0 +1,298 @@
+{
+  "id": "79230a2b-625f-42d7-8a95-488cb7d56bb5",
+  "name": "GetUserDetails",
+  "auto": true,
+  "contexts": [
+    "AskQuery-Yes"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Canyoupleaseanswermyquery.Canyoupleaseanswermyquery-yes.Canyoupleaseanswermyquery-yes-custom",
+      "affectedContexts": [
+        {
+          "name": "AskQuery-GetDetails",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d2646eb2-09d6-4961-bd5f-a1177d89abe1",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "Name",
+          "value": "$Name",
+          "prompts": [
+            "What is your name, my friend?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "dac70521-d305-4f0f-aab2-f607f201336e",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            "What is your email address, $Name?",
+            "$Name, can you tell me your email ID?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ba328939-9d9b-4f7c-bfba-acf0c32469b1",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone_number",
+          "value": "$phone_number",
+          "prompts": [
+            "What is your contact number $Name?",
+            "What is your phone no. $Name?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "Okay $Name, now tell me your query to ask the Doctor :"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "757f8279-42da-4d28-96bf-efc4f6cab844",
+      "data": [
+        {
+          "text": "My name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Deepak",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bd448b4e-4ab8-4c39-b9b5-1a4ebab07aec",
+      "data": [
+        {
+          "text": "Anubhav",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "anubhav.anand@bennett.edu.in",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "9735540483",
+          "alias": "phone_number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4c9c580b-b2a3-43dd-92e7-13e10029145e",
+      "data": [
+        {
+          "text": "Kanad",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "kbiswas11@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "7838360783",
+          "alias": "phone_number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "34c92236-0054-4a8c-94b2-a1f8c492e685",
+      "data": [
+        {
+          "text": "My email ID is ",
+          "userDefined": false
+        },
+        {
+          "text": "nosamhardydeepaksharma@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9caf321f-1bbf-4bd0-a401-c0847fe2a363",
+      "data": [
+        {
+          "text": "I am ",
+          "userDefined": false
+        },
+        {
+          "text": "Mahesh",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1c290bc4-975c-4ac6-88be-3c8a4770b4eb",
+      "data": [
+        {
+          "text": "I am ",
+          "userDefined": false
+        },
+        {
+          "text": "Deepak",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": ". My email ID is ",
+          "userDefined": false
+        },
+        {
+          "text": "deepak.sharma@bennett.edu.in",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ". My phone number is ",
+          "userDefined": false
+        },
+        {
+          "text": "8802027419",
+          "alias": "phone_number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "45bdbb2f-aa02-4cb1-82ea-6b22bc90edcd",
+      "data": [
+        {
+          "text": "My name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Rajesh",
+          "alias": "Name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", Email ",
+          "userDefined": false
+        },
+        {
+          "text": "rajesh.anand@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ", phone number ",
+          "userDefined": false
+        },
+        {
+          "text": "9999999999",
+          "alias": "phone_number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

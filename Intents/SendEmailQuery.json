@@ -1,0 +1,111 @@
+{
+  "id": "e7f8bbef-2769-4c85-b3a7-b8693a7a981e",
+  "name": "SendEmailQuery",
+  "auto": true,
+  "contexts": [
+    "AskQuery-GetDetails"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0e0acec1-c471-41e5-a7ab-9ce1563feb2d",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "query",
+          "value": "$query",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "Okay #AskQuery-GetDetails.name , your query has been saved. I will forward your query and give you back the response on your mail:\n#AskQuery-GetDetails.email .\n\nAnything else you would want me to do?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "7e00b6a4-b238-44c0-824e-17e686400f2c",
+      "data": [
+        {
+          "text": "Hi Doctor, I recently had a surgery of my knees, up till when will I be able to play basketball again?",
+          "alias": "query",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8d213c03-d3fe-43d5-a01d-7930192d0715",
+      "data": [
+        {
+          "text": "can i bath when recovering from high fever?",
+          "alias": "query",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "758d266c-29a1-4f87-b068-9c5e55d037b2",
+      "data": [
+        {
+          "text": "Is it safe to drink tea in fever",
+          "alias": "query",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "bb6edf52-7877-496d-b713-748c35d6c417",
+      "data": [
+        {
+          "text": "I wanted to ask if it is okay to take paracetamol when sick.",
+          "alias": "query",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": true,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

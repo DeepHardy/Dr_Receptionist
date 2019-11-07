@@ -1,0 +1,387 @@
+{
+  "id": "4660230a-2cec-400a-90e8-cef0a28c83b6",
+  "name": "makeAppointment",
+  "auto": true,
+  "contexts": [
+    "setAppointment-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "222ae4e1-1230-4b0d-8f03-bf5cbd2785a7",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "What is your name, my friend?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "d577cb2d-c044-48ab-ae8a-f4e3f3596c69",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            "What is your email-ID, $name?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "cec3f248-777d-4a0f-8969-797773a8e307",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "contact",
+          "value": "$contact",
+          "prompts": [
+            "$name, please provide your contact number."
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "f1975bce-cd20-455c-81fe-c3e3e5c6819a",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            "What time would you come, $name ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "466d071f-6d07-4413-b04b-2a44cc370534",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            "What is the date of your appointment, $name ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "c95f2d15-4b00-431c-8d13-768d56dc5e14",
+          "required": true,
+          "dataType": "@AppointmentType",
+          "name": "AppointmentType",
+          "value": "$AppointmentType",
+          "prompts": [
+            "$name , tell me type/purpose of your appointment?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "OOPS, something went wrong. Please try again."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "edba8f76-c034-4d5e-9c57-aff71c7da319",
+      "data": [
+        {
+          "text": "I am ",
+          "userDefined": false
+        },
+        {
+          "text": "Deepak",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ". My email ID is ",
+          "userDefined": false
+        },
+        {
+          "text": "deepak.sharma@bennett.edu.in",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ". My phone number is ",
+          "userDefined": false
+        },
+        {
+          "text": "8802027419",
+          "alias": "contact",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": ". I would like to set an appointment for ",
+          "userDefined": false
+        },
+        {
+          "text": "2pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Tuesday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "602e5d71-c86a-4024-bca4-6b0685da45a3",
+      "data": [
+        {
+          "text": "Kanad",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "kbiswas11@gmail.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "7838360783",
+          "alias": "contact",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9c75f22f-8767-4269-8aa7-fe9263d59032",
+      "data": [
+        {
+          "text": "Anubhav",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "anubhav.anand@bennett.edu.in",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "9735540483",
+          "alias": "contact",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2240e6fe-ae3d-4b26-9b4f-2ee0cd88924c",
+      "data": [
+        {
+          "text": "My name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Deepak",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6e6bebf9-9d5e-40ab-997b-f8c0c03f84ba",
+      "data": [
+        {
+          "text": "I would like to set an appointment for ",
+          "userDefined": false
+        },
+        {
+          "text": "2pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Tuesday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "420de02c-fad5-4e71-a22a-5b865ff02079",
+      "data": [
+        {
+          "text": "set an appointment on ",
+          "userDefined": false
+        },
+        {
+          "text": "15 Nov",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "5:30 pm",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ec62f81f-b727-4e1e-aaa9-58ca4dd522b6",
+      "data": [
+        {
+          "text": "see a ",
+          "userDefined": false
+        },
+        {
+          "text": "dentist",
+          "alias": "AppointmentType",
+          "meta": "@AppointmentType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d9aa187e-656c-4393-9fec-fc1c8d33e7bd",
+      "data": [
+        {
+          "text": "set an appointment for ",
+          "userDefined": false
+        },
+        {
+          "text": "tuesday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "9am",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": true,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
